@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSSNEKA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.ibb.co.com/B5Zwc38m/1000061688-removebg-preview.png" type="image/x-icon">
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('URL_IMAGE') no-repeat center center fixed; 
+    background-size: cover;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: opacity(0.5);
+    z-index: -1;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+.box {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 3s forwards;
+}
+@keyframes fadeIn {
+    to {
+         opacity: 1;
+    }
+}
+.fade-in-text {
+    font-size: 2em;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+.animated-box {
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+}
+@media (min-width: 600px) {
+    .box {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+}
+@keyframes moveUpBlur {
+     0% {
+         top: 0;
+        filter: blur(0px);
+    }
+    100% {
+        top: -100px;
+        filter: blur(5px);
+    }
+}
+@media (min-width: 900px) {
+.box {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+    }
+}
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.social-links img:hover {
+    transform: scale(1.2);
+}
+.header {
+    position: relative;
+    text-align: center;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container table {
+    margin-left:20px;
+    border-collapse: collapse;
+    width: 65%;
+}
+
+.profile-container td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-icon {
+    width: 40px;
+    height: 38px;
+    margin: 0 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    position: relative;
+}
+
+.footer .social-links {
+    justify-content: center;
+}
+</style>
+</head>
+    <header class="fade-in-text header">
+        <img src="https://i.ibb.co.com/B5Zwc38m/1000061688-removebg-preview.png" style="position: absolute; top: 10px; left: 10px; width: 50px; height: 50px;">
+        <h6 style="margin: 0;">OSSNEKA</h6>
+        <h6 style="margin: 5px 0;">(OSIS SMK Negeri 4 KLATEN)</h6>
+        <h6 style="margin: 5px 0;">Organisasi Siswa Intra Sekolah</h6>
+        <h6 style="margin: 5px 0;">SMK Negeri 4 KLATEN</h6>
+        <img src="https://i.ibb.co.com/9myGZQD4/Whats-App-Image-2024-11-15-at-15-52-03-a4e45878-removebg-preview.png" style="position: absolute; top: 10px; right: 10px; width: 50px; height: 50px;">
+    </header>
+<body>
+    <div class="profile-container">
+        <img src="https://i.ibb.co.com/Xr0wYTFf/djana.png" alt="Profile Picture" height="20%" width="20%" style="top:100px;left: 100px;">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>Djana Junada Mukti</td>
+            </tr>
+            <tr>
+                <td>Jabatan</td>
+                <td>Seketaris</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; size: 20%;">Media Sosial</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/jana_daa" target="_blank">
+                            <img src="https://i.ibb.co.com/ZpqR0tfg/ig.png" alt="Instagram" class="social-icon">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="profile-container">
+        <img src="https://i.ibb.co.com/B2TQmfvW/dhita.png" alt="Profile Picture" height="20%" width="20%" style="top:100px;left: 100px;">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>M.M Dhita Angggraeni</td>
+            </tr>
+            <tr>
+                <td>Jabatan</td>
+                <td>Seketaris</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; size: 20%;">Media Sosial</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@warmglee" target="_blank">
+                            <img src="https://i.ibb.co.com/V0Ftwwvr/th-2-removebg-preview.png" alt="TikTok" class="social-icon">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@ossneka_" target="_blank">
+                <img src="https://i.ibb.co.com/V0Ftwwvr/th-2-removebg-preview.png" alt="TikTok" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/ossneka_" target="_blank">
+                <img src="https://i.ibb.co.com/ZpqR0tfg/ig.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://www.youtube.com/@OSSNEKA" target="_blank">
+                <img src="https://i.ibb.co.com/Wp6tN19D/th-3-removebg-preview.png" alt="YouTube" width="50" height="50">
+            </a>
+        </div>
+        <div>OSSNEKA 2024/2025</div>
+    </footer>    
+</html>
